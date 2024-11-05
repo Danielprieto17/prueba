@@ -1,0 +1,210 @@
+:root{
+    --fondo-body: #ffffff41;
+    --fondo-header: #c0c0c05b;
+    --fondo-title: rgb(243, 243, 243);
+    --fondo-main: #E0E0E0;
+    --fondo-cont: rgba(0, 130, 190, 0.664);
+    --fondo-nav: rgba(0, 0, 0, 0.87);
+    --fondo-barra: rgba(255, 255, 255, 0.455);
+    --fondo-user-box: rgba(93, 222, 226, 0.267);
+    --fondo-side-bar: #ffffff48;
+    --fondo-inputs: #F4A896;
+    --fondo-barra-nav: #fc9f8a85;
+    --fondo: #ffffff;
+    --fondo-bar:#78a0b6;
+    --fondo-inicio-sesion:#c0d2db;
+    --fondo-inicio-sesion1:rgba(92, 161, 196, 0.308);
+    --fondo-footer:rgba(0, 0, 0, 0.623);
+    --fondo-btn1:rgba(255, 255, 255, 0.919);
+    --fondo-impo:#005a66;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+    background: url(pattern_bg.jpg);
+    height: 100vh;
+    width: 100%;
+}
+.contenedor > *{
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+
+}
+.contenedor{
+    display: grid;
+    grid-template:
+    "header"60px
+    "main"auto
+    "footer"60px;
+
+    /* HEADER */
+    .header{
+        display: flex;
+        justify-content: space-between;    
+        align-items: center;
+        background-color: var(--fondo-bar);
+    }
+    .box-agendar{
+        margin-bottom: 20px;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    .titulo-happy{
+        display: flex;
+        font-size: 25px;
+        text-decoration: none;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-family: "Yusei Magic", sans-serif;
+        color: var(--fondo);
+    }
+    p{  
+        margin-left: 5px;
+        color: var(--fondo-inputs);
+    }
+    .barra-busqueda{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--fondo);
+        border-radius: 10px;
+        padding:0px 5px;
+        background-color: var(--fondo-barra);
+        color: var(--fondo-header);
+        transition: all 0.5s;
+
+    }
+    #Buscar{
+        width: 9rem;
+        padding: 5px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: var(--fondo-impo);
+    }
+    #Buscar::placeholder{
+        color: var(--fondo-impo);
+    }
+    .icono{
+        font-size: 20px;
+        width: 100%;
+        margin-top: 5px;
+        color: var(--fondo-impo);
+    }
+    .icon-menu{
+        margin-right: 20px;
+        font-size: 30px;
+        color: var(--fondo);
+    }
+    /* MAIN */
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .form{
+        text-align: center;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        width: auto;
+        height: 100%;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: var(--fondo-inicio-sesion);
+    }
+    h1{
+        margin-top: 10px;
+        margin: auto;
+        width: 300px;
+        font-family:"Yusei Magic", sans-serif;
+        font-size: 40px;
+        color: var(--fondo-impo);
+        border-bottom: 2px solid var(--fondo-impo);
+    }
+    h2{
+        color: var(--fondo);
+        font-size: 24px;
+        margin: auto;
+        text-shadow: 0 0 2px;
+        font-weight: 100;
+        border-bottom: 1px solid var(--fondo);
+        margin-bottom: 20px;
+        width:100%;
+        padding: 10px 0px;
+        margin-top: 10px;
+        background-color: var(--fondo-bar);
+    }
+    
+    .input{
+        width: 200px;
+        padding: 8px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        margin: 10px;
+        border: 1px solid var(--fondo-impo);
+        outline: none;
+        color: var(--fondo-impo);
+        background-color: var(--fondo-barra);
+    }
+    .input::placeholder{
+        color: var(--fondo-impo);
+    }
+    .boton{
+        width: 30%;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: var(--fondo-barra-nav);
+        color: var(--fondo-impo);
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.5s;
+    }
+    .btn-a{
+        text-decoration: none;
+        color: var(--fondo-impo);
+    }
+
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--fondo-bar);
+        padding: 10px;
+        border-top: 1px solid;
+        color: var(--fondo);
+        font-size: 15px;
+    }
+    .titulo-footer{
+        color: var(--fondo);
+        font-weight: bold;
+    }
+    .bxl-facebook{
+        color: var(--fondo);
+        font-size: 25px;
+    }
+    .bxl-instagram{
+        color: var(--fondo);
+        font-size: 25px;
+    }
+    .bxl-twitter{
+        color: var(--fondo);
+        font-size: 25px;
+    }
+    .bxl-youtube{
+        color: var(--fondo);
+        font-size: 25px;
+    }
+}
